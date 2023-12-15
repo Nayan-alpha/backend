@@ -6,7 +6,7 @@ router.use(
     cors({
         credentials:true,
         //origin:'http://localhost:3000'
-        origin:'https://frontend-c57j.onrender.com/'
+        origin:'https://frontend-c57j.onrender.com'
     })
 )
 
