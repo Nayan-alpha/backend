@@ -5,6 +5,10 @@ const cors=require("cors")
 const cookieParser=require('cookie-parser')
 const app=express();
 app.use(express.json())
+app.use(cors({
+    origin: 'https://frontend-c57j.onrender.com/',
+    credentials: true,
+}));
 app.use("/",require("./routs/authRouts"))
 
 app.use(cookieParser())
